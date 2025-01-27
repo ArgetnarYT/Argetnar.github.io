@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doku - Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Добавляем анимацию для заголовка */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+
+<header class="bg-opacity-80 py-6">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold fade-in">Doku - Скрипты и Программы</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="hover:text-gray-300 transition duration-300">Главная</a></li>
+                <li><a href="install.html" class="hover:text-gray-300 transition duration-300">Установка Эксплойтов</a></li>
+                <li><a href="scripts.html" class="hover:text-gray-300 transition duration-300">Скрипты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="flex-grow container mx-auto p-6">
+    <h2 class="text-3xl font-semibold mb-4 fade-in">Добро пожаловать!</h2>
+    <p class="text-lg mb-6 fade-in">Здесь вы можете найти различные скрипты и эксплойтов для игр Roblox.</p>
+    <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 fade-in">
+        <h3 class="text-2xl font-bold mb-2">Новые Скрипты</h3>
+        <p>Проверьте наши последние обновления и новые скрипты, которые помогут вам в играх.</p>
+    </div>
+</main>
+
+<footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2023 Doku. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
